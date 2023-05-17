@@ -16,6 +16,7 @@ This was my first project using JavaScript. That "To-Do List" was created using 
 
 <br>
 <br>
+
 ## Technologies <img src="https://img.icons8.com/?size=512&id=9Xtf7Zwsmhoq&format=png" alt="image_icon" width="30px" align="center">
 
 - [HTML](./praticando.html)
@@ -30,4 +31,6 @@ This was my first project using JavaScript. That "To-Do List" was created using 
 
 
 ## Build and Run 🚀
-To access the application, go this way --> [<img src="https://img.icons8.com/?size=512&id=EvhyZpKOoV4z&format=png" width="40px" align="center" alt="link_icon">](https://lgabrieldev.github.io/todo_list_first_project/praticando.html)
+To access the application, go this way --> <a target="_blank" href="https://lgabrieldev.github.io/todo_list_first_project/praticando.html"> <img src="https://img.icons8.com/?size=512&id=EvhyZpKOoV4z&format=png" width="40px" align="center" alt="link_icon"> </a>
+
+
