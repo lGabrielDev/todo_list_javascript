@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- external CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- google font -->
+    <title>Praticando</title>
+</head>
+<body>
+    <!-- Conteudo completo -->
+    <div class="paginaCompleta">
+        <!-- header -->
+        <div class="header">
+            <h2 class="headerTitle">To Do List</h2>
+            <form action="#" id="formulario">
+                <input id="inputTask" type="text" placeholder="Add a new task">
+                <button type="button" class="addButton">
+                    <ion-icon name="add-outline" class="addButtonIcon"></ion-icon>
+                </button>
+            </form>
+        </div>
+        <!-- tasks -->
+        <div class="tasks">
+            <h2 class="tasksTitle">Tasks:</h2>
+            <ul>
+                <li class="task hideElement">
+                    <span class="texto">Tarefa1</span>
+                    <ion-icon name="checkmark-outline" class="deleteAndCheckIcons checkIcon"></ion-icon>
+                    <ion-icon name="close-outline" class="deleteAndCheckIcons deleteIcon"></ion-icon>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- external script -->
+    <script src="./js/script.js"></script>
+    <!-- ion icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+/**************** Cores do projeto ****************/
+:root{
+    --orange: #E65763;
+    --roxo: #37073D;
+    --redRemove: #E55662;
+    --greenCheck:#00838F;
+}
+
+
+
+
+/**************** Configuracoes iniciais - removendo paddin and margin ***************/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Helvetica;
+    font-weight: 500;
+    background-image: linear-gradient(to right, var(--orange), var(--roxo));
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
+/*************** div pai de todas ****************/
+div.paginaCompleta{
+    width: 500px;
+    height: 99%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+
+
+/*************** header ***************/
+h2.headerTitle{
+    font-size: 50px;
+}
+
+div.header{
+    padding-top: 30px;
+    position: relative;
+}
+
+.headerTitle{
+    padding-bottom: 34px;
+}
+
+
+form#formulario{
+    display: flex;
+    flex-direction: row;
+}
+
+/* input */
+input#inputTask{
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid var(--roxo);
+    font-size: 18px;
+    color: var(--roxo);
+}
+
+
+input#inputTask::placeholder{
+    color:  #37073d8a;
+}
+
+input#inputTask:focus{
+    outline: none;
+}
+
+
+/* add button */
+form#formulario .addButton{
+    width: 70px;
+    cursor: pointer;
+    border: 1px solid var(--roxo);
+    background-color: white;
+    transition: 0.4s;
+}
+
+form#formulario .addButton:hover{
+    background-color: var(--roxo);
+    color: white;
+}
+
+.addButtonIcon{
+    font-size: 25px;
+    padding-top: 2px    ;
+}
+
+
+
+
+/*************** tasks ***************/
+div.tasks{
+    padding-top: 30px;
+}
+
+h2.tasksTitle{
+    padding-bottom: 15px;
+}
+
+/* ul */
+.tasks ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+
+/* cada li -> cada task */
+li{
+    list-style: none; /* removendo os pontinhos de cada "list item" */
+    padding: 26px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid var(--roxo);
+    background-color: white;
+    color: var(--roxo);
+    margin-bottom: 15px;
+    box-sizing: border-box; /* Mesmo dando padding, esse elemento não vai ultrapassar o tamanho do pai */
+    transition: 1s;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+
+
+/* icons da task --> check icon and remove icon */
+.deleteAndCheckIcons{
+    position: absolute;
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 5px;
+    margin: 0;
+}
+
+div.tasks li .deleteIcon{
+    right: 7px;
+}
+
+div.tasks li .checkIcon{
+    right: 48px;
+}
+
+
+li .deleteIcon:hover{
+    background-color: var(--redRemove);
+    color: white;
+    font-weight: bold;
+}
+
+li .checkIcon:hover{
+    background-color: var(--greenCheck);
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+/*************** classes coringas. Dependendo da situacao, vamos remover ou adicioná-las ***************/
+
+/* tasks completas */
+li.task_done{
+    background-color: var(--roxo);
+    color: white;
+    text-decoration: line-through solid white 1.5px;
+}
+
+
+/* esconder uma task */
+li.hideElement{
+    display: none;
+}
